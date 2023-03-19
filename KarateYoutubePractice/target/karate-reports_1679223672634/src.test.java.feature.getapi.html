@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.feature.getapi</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-03-19 04:22:57 pm</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>get user details</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:20]"><span>[2:20]</span> <span>get user details-user not found</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/feature/getapi.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">GET API Feature</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">get user details</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref failed">3</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.3">&gt;&gt;&gt;&gt; js failed:
+01: (function fn() {
+02: 
+03:  var env =karate.env
+04:  if(!env){
+05:   env = &#39;dev&#39;
+06:   
+07:  }
+08:  var config = {
+09:   env:env,
+10:   myVarName: &#39;hello karate&#39;
+11:   baseUrl:&#39;https://gorest.co.in&#39;
+12:   
+13:  }
+14:  if(env==&#39;dev&#39;){
+15:   //
+16:  }
+17:  else if(env =&#39;e2e&#39;)
+18:  {
+19:   //
+20:  }
+21:  return config;
+22:  
+23: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:11:2 Expected comma but found ident
+  baseUrl:&#39;https://gorest.co.in&#39;
+  ^
+Unnamed:14:1 Expected ) but found if
+ if(env==&#39;dev&#39;){
+ ^
+Unnamed:16:1 Expected eof but found }
+ }
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+16:22:57.387 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn() {
+02: 
+03:  var env =karate.env
+04:  if(!env){
+05:   env = &#39;dev&#39;
+06:   
+07:  }
+08:  var config = {
+09:   env:env,
+10:   myVarName: &#39;hello karate&#39;
+11:   baseUrl:&#39;https://gorest.co.in&#39;
+12:   
+13:  }
+14:  if(env==&#39;dev&#39;){
+15:   //
+16:  }
+17:  else if(env =&#39;e2e&#39;)
+18:  {
+19:   //
+20:  }
+21:  return config;
+22:  
+23: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:11:2 Expected comma but found ident
+  baseUrl:&#39;https://gorest.co.in&#39;
+  ^
+Unnamed:14:1 Expected ) but found if
+ if(env==&#39;dev&#39;){
+ ^
+Unnamed:16:1 Expected eof but found }
+ }
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:20]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:20]</span>
+                <span class="scenario-name">get user details-user not found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>0</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref failed">20</div>
+      
+      <div class="step-cell failed">
+        <span>*</span>&nbsp;<span>scenario [run] failed</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.20">&gt;&gt;&gt;&gt; js failed:
+01: (function fn() {
+02: 
+03:  var env =karate.env
+04:  if(!env){
+05:   env = &#39;dev&#39;
+06:   
+07:  }
+08:  var config = {
+09:   env:env,
+10:   myVarName: &#39;hello karate&#39;
+11:   baseUrl:&#39;https://gorest.co.in&#39;
+12:   
+13:  }
+14:  if(env==&#39;dev&#39;){
+15:   //
+16:  }
+17:  else if(env =&#39;e2e&#39;)
+18:  {
+19:   //
+20:  }
+21:  return config;
+22:  
+23: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:11:2 Expected comma but found ident
+  baseUrl:&#39;https://gorest.co.in&#39;
+  ^
+Unnamed:14:1 Expected ) but found if
+ if(env==&#39;dev&#39;){
+ ^
+Unnamed:16:1 Expected eof but found }
+ }
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+16:22:57.423 scenario [run] failed
+&gt;&gt;&gt;&gt; js failed:
+01: (function fn() {
+02: 
+03:  var env =karate.env
+04:  if(!env){
+05:   env = &#39;dev&#39;
+06:   
+07:  }
+08:  var config = {
+09:   env:env,
+10:   myVarName: &#39;hello karate&#39;
+11:   baseUrl:&#39;https://gorest.co.in&#39;
+12:   
+13:  }
+14:  if(env==&#39;dev&#39;){
+15:   //
+16:  }
+17:  else if(env =&#39;e2e&#39;)
+18:  {
+19:   //
+20:  }
+21:  return config;
+22:  
+23: })
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:11:2 Expected comma but found ident
+  baseUrl:&#39;https://gorest.co.in&#39;
+  ^
+Unnamed:14:1 Expected ) but found if
+ if(env==&#39;dev&#39;){
+ ^
+Unnamed:16:1 Expected eof but found }
+ }
+ ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:373)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:124)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:120)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1246)
+- com.intuit.karate.core.ScenarioRuntime.evalConfigJs(ScenarioRuntime.java:287)
+- com.intuit.karate.core.ScenarioRuntime.beforeRun(ScenarioRuntime.java:362)
+- com.intuit.karate.core.ScenarioRuntime.run(ScenarioRuntime.java:388)
+
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
