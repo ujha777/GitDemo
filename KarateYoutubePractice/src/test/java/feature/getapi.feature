@@ -17,7 +17,7 @@ Then status 200
 * match actEmail == 'nair_priya@pacocha-wyman.net'
 
 
-Scenario: get user details - user not found
+Scenario: get user details - User not found
 Given url baseUrl+'/public/v2/users'
 And path '1'
 When method GET
